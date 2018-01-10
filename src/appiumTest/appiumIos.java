@@ -16,23 +16,23 @@ public class appiumIos {
 	
 	WebDriver driver;
 	
-//	@Test
-//	public void startBrowser() throws MalformedURLException {
-//		DesiredCapabilities capabilities = new DesiredCapabilities();
-//		capabilities.setCapability("deviceName", "iPhone 7 Plus");
-//		capabilities.setCapability("platformName", "iOS");
-//		capabilities.setCapability("platformVersion", "10.3");
-//		capabilities.setCapability(CapabilityType.BROWSER_NAME, "safari");
-//		driver = new RemoteWebDriver(new URL ("http://0.0.0.0:4723/wd/hub"), capabilities);
-//		driver.get("http://google.com");
-//		System.out.println(driver.getTitle());
-//		
-//		WebElement search = driver.findElement(By.xpath("//*[@id=\"lst-ib\"]"));
-//		search.sendKeys("India");
-//		//search.click();
-//		WebElement searchButton = driver.findElement(By.xpath("//*[@id=\"tsbb\"]"));
-//		searchButton.click();
-//	}
+	@Test
+	public void startBrowser() throws MalformedURLException {
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability("deviceName", "iPhone 7 Plus");
+		capabilities.setCapability("platformName", "iOS");
+		capabilities.setCapability("platformVersion", "10.3");
+		capabilities.setCapability(CapabilityType.BROWSER_NAME, "safari");
+		driver = new RemoteWebDriver(new URL ("http://0.0.0.0:4723/wd/hub"), capabilities);
+		driver.get("http://google.com");
+		System.out.println(driver.getTitle());
+		
+		WebElement search = driver.findElement(By.xpath("//*[@id=\"lst-ib\"]"));
+		search.sendKeys("India");
+		//search.click();
+		WebElement searchButton = driver.findElement(By.xpath("//*[@id=\"tsbb\"]"));
+		searchButton.click();
+	}
 	
 /*	@Test
 	public void startChromeBrower() throws MalformedURLException {
