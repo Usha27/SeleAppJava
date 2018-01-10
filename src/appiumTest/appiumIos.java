@@ -34,7 +34,7 @@ public class appiumIos {
 //		searchButton.click();
 //	}
 	
-/*	@Test
+	@Test
 	public void startChromeBrower() throws MalformedURLException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("deviceName", "iPhone 7 Plus");
@@ -47,7 +47,7 @@ public class appiumIos {
 		WebElement lable =driver.findElement(By.id("myLabel"));
 		System.out.println(lable.getAttribute("name"));
 	}
-	*/
+
 	/*
 	 *  @BeforeClass
 		  public void beforeTest() throws MalformedURLException {
@@ -76,35 +76,34 @@ public class appiumIos {
 }
 	 */
 	
-	@Test
-	public void openChrome() throws MalformedURLException {
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("deviceName", "1015fa3061d12b05");
-		capabilities.setCapability("platformName", "Android");
-		capabilities.setCapability("platformVersion", "5.1.1");
-		capabilities.setCapability("app", "/Users/shingade/Desktop/kp-flagship-beta-470001.apk");
-		capabilities.setCapability("appPackage", "org.kp.m.beta");
-		//capabilities.setCapability("appActivity", "org.kp.m.env.EnvironmentChooserActivity");
-		driver = new RemoteWebDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
-		
-		
-		 driver.findElement(By.xpath("//*[contains(@text,’HPP’)]")).click();
-	}
+//	@Test
+//	public void openChrome() throws MalformedURLException {
+//		DesiredCapabilities capabilities = new DesiredCapabilities();
+//		capabilities.setCapability("deviceName", "1015fa3061d12b05");
+//		capabilities.setCapability("platformName", "Android");
+//		capabilities.setCapability("platformVersion", "5.1.1");
+//		capabilities.setCapability("app", "/Users/shingade/Desktop/kp-flagship-beta-470001.apk");
+//		capabilities.setCapability("appPackage", "org.kp.m.beta");
+//		//capabilities.setCapability("appActivity", "org.kp.m.env.EnvironmentChooserActivity");
+//		driver = new RemoteWebDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+//		
+//		
+//		 driver.findElement(By.xpath("//*[contains(@text,’HPP’)]")).click();
+//	}
 	 
 	
-	@Test
-	
-	public void openBrowser() throws MalformedURLException {
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("deviceName","1015fa3061d12b05");
-		capabilities.setCapability("platformName", "Android");
-		capabilities.setCapability("platformVersion", "5.1.1");
-		capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-		capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, "true");
-		driver = new RemoteWebDriver(new URL("http://0.0.0.0:4723/wd/hub"),capabilities);
-		driver.get("http://www.google.com");
-		System.out.println(driver.getTitle());
-		
-	}
+//	@Test
+//	public void openBrowser() throws MalformedURLException {
+//		DesiredCapabilities capabilities = new DesiredCapabilities();
+//		capabilities.setCapability("deviceName","1015fa3061d12b05");
+//		capabilities.setCapability("platformName", "Android");
+//		capabilities.setCapability("platformVersion", "5.1.1");
+//		capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+//		capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, "true");
+//		driver = new RemoteWebDriver(new URL("http://0.0.0.0:4723/wd/hub"),capabilities);
+//		driver.get("http://www.google.com");
+//		System.out.println(driver.getTitle());
+//		
+//	}
 
 }
